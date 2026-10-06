@@ -133,26 +133,6 @@ For example, negative `Available Qty` records were investigated as potential inv
 
 The Power BI model uses fact and dimension tables to support filtering, reusable measures, and analysis across inventory and shipment data.
 
-### Model structure
-
-```text
-                    dim_date
-                       │
-                       │
-              ┌────────┴────────┐
-              │                 │
-        fact_inventory     fact_shipments
-              │                 │
-              │                 │
-        dim_product        dim_product
-              │
-        dim_location
-              │
-       ┌──────┴────────┐
-       │               │
-dim_location_origin   dim_location_destination
-```
-
 The actual Power BI model contains:
 
 - `fact_inventory` for inventory-level operational records
