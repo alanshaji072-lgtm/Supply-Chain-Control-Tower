@@ -562,6 +562,7 @@ AI assistance was used as a support tool, not as a replacement for understanding
 Supply-Chain-Control-Tower/
 │
 ├── README.md
+├── LICENCE
 │
 ├── dashboard/
 │   └── Supply_Chain_Control_Tower.pbix
