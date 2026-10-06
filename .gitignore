@@ -1,0 +1,18 @@
+# Power BI temporary / local files
+*.pbit
+*.bak
+*.tmp
+~$*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local data exports
+*.csv
+*.xlsx
+*.xls
+
+# OS files
+.DS_Store
+Thumbs.db
