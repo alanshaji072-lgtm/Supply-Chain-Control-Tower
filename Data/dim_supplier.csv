@@ -1,0 +1,41 @@
+Supplier_ID,Supplier_Name,Supplier_Category,Country,Region,Supplier_Risk_Score,Avg_Lead_Time_Days,On_Time_Rate
+SUP001,GlobalTech Components,Components,Taiwan,APAC,29,20,0.946
+SUP002,Nordic Parts Ltd,Accessories,South Korea,APAC,52,16,0.876
+SUP003,Pacific Devices,Packaging,Singapore,Southeast Asia,67,23,0.848
+SUP004,EuroCore GmbH,Packaging,Bangladesh,South Asia,32,18,0.892
+SUP005,Shenzhen Advanced Electronics,Electronics,Thailand,Southeast Asia,49,17,0.865
+SUP006,Mumbai Industrial Supply,Electronics,Singapore,Southeast Asia,41,15,0.911
+SUP007,Seoul Tech Systems,Components,USA,North America,58,20,0.918
+SUP008,Rotterdam Components,Components,germany,Southeast Asia,33,19,0.942
+SUP009,Dubai Electronics Trading,Accessories,USA,EUROPE,33,12,0.93
+SUP010,Atlas Hardware,Accessories,USA,North America,26,18,0.911
+SUP011,BlueWave Semiconductors,Mechanical,Mexico,North America,52,19,0.898
+SUP012,Prime Circuitry,Electronics,Australia,APAC,51,19,0.894
+SUP013, GlobalTech Components ,Electronics,Mexico,North America,43,15,0.878
+SUP014,Orion Components,Electronics,Japan,APAC,32,21,0.874
+SUP015,MetroTech Manufacturing,Mechanical,Taiwan,APAC,53,21,0.892
+SUP016,Apex Digital Parts,Electronics,Italy,Europe,40,21,0.895
+SUP017,Zenith Electronics,Accessories,Thailand,Southeast Asia,27,11,0.938
+SUP018,Silverline Components,Mechanical,Sweden,Europe,41,18,0.914
+SUP019,EastBridge Supply,Electronics,Canada,North America,59,15,0.853
+SUP020,Nova Industrial,Mechanical,Taiwan,APAC,59,16,0.862
+SUP021,Horizon Tech,Components,Vietnam,Southeast Asia,58,-5,0.862
+SUP022,Delta Micro Systems,Mechanical,Italy,Europe,16,8,0.915
+SUP023,Crestline Electronics,Mechanical,Mexico,North America,57,14,0.857
+SUP024,Titan Components,Mechanical,Singapore,Southeast Asia,64,14,0.847
+SUP025,Evergreen Devices,Mechanical,China,APAC,43,21,0.851
+SUP026,Summit Supply Co,Packaging,Poland,Europe,150,9,0.906
+SUP027,Fusion Hardware,Electronics,Mexico,North America,54,18,0.912
+SUP028,NorthStar Electronics,Electronics,Saudi Arabia,Middle East,53,19,0.908
+SUP029,Quantum Parts,Mechanical,Netherlands,Europe,57,26,0.836
+SUP030,Sterling Components,Accessories,Netherlands,Europe,42,10,0.912
+SUP031,Pacific Rim Supply,Electronics,Germany,Europe,20,10,0.948
+SUP032,CoreLink Devices,Packaging,Japan,APAC,95,23,1.4
+SUP033,BrightPath Electronics,Accessories,Saudi Arabia,Middle East,55,14,0.86
+SUP034,IronGate Components,Electronics,USA,North America,71,20,0.834
+SUP035,Skyline Tech Supply,Mechanical,Sweden,Europe,16,12,0.947
+SUP036,Unknown,Mechanical,Sri Lanka,South Asia,69,17,0.812
+SUP037,Redwood Industrial,Packaging,Germany,Europe,35,27,0.889
+SUP038,Pioneer Components,Components,Sri Lanka,South Asia,68,21,0.84
+SUP039,Vertex Global Supply,Components,Singapore,Southeast Asia,36,19,0.897
+SUP040,BluePeak Electronics,Accessories,Mexico,North America,53,26,0.878

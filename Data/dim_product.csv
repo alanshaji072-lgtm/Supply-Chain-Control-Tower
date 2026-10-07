@@ -1,0 +1,61 @@
+Product_ID,SKU,Product_Name,Category,Unit_Cost_USD,Unit_Selling_Price_USD,Criticality
+SKU001,LAP-001,Business Laptop,Computing,634.66,599.46,Medium
+SKU002,MON-002,4K Monitor,Displays,802.45,700.77,High
+SKU003,CMP-003,Cpu Module,Components,333.39,1689.11,High
+SKU004,NET-004,Network Adapter,Computing,169.24,1503.6,High
+SKU005,ACC-005,Webcam,Accessories,729.27,1579.86,High
+SKU006,SSD-006,External Ssd,Storage,389.63,1409.35,Low
+SKU007,PWR-007,Ups 2000Va,Power,194.08,69.46,High
+SKU008,LAP-008,Mini Pc,Computing,179.89,1234.29,High
+SKU009,MON-009,1Tb Ssd,Displays,840.76,1064.86,High
+SKU010,CMP-010,Memory Module,Components,969.85,1300.54,Medium
+SKU011,NET-011,Firewall Appliance,Networking,170.41,1672.87,Medium
+SKU012,ACC-012,Mechanical Keyboard,Accessories,378.61,902.46,Medium
+SKU013,SSD-013,Nas Drive,Storage,361.57,1668.04,High
+SKU014,PWR-014,Surge Protector,Power,677.36,1157.63,High
+SKU015,LAP-015,Mini Pc,Computing,517.46,1740.74,Medium
+SKU016,MON-016,24-Inch Monitor,Displays,-50.0,1456.65,Medium
+SKU017,CMP-017,Cpu Module,Components,45.96,236.55,Low
+SKU018,NET-018,Firewall Appliance,Networking,961.26,453.28,Medium
+SKU019,ACC-019,Webcam,Accessories,1044.59,1103.45,Medium
+SKU020,SSD-020,Portable Hdd,Storage,464.67,792.42,Medium
+SKU021,PWR-021,Surge Protector,Power,558.33,479.96,High
+SKU022,LAP-022,Workstation,Computing,901.57,1478.08,High
+SKU023,MON-023,4K Monitor,Displays,723.46,,Low
+SKU024,CMP-024,1Tb Ssd,Components,389.64,297.5,Low
+SKU025,NET-025,Network Adapter,Networking,359.55,314.59,High
+SKU026,ACC-026,Mechanical Keyboard,Accessories,49.85,142.22,High
+SKU027,SSD-027,Enterprise Ssd,Storage,719.59,1239.65,Medium
+SKU028,PWR-028,Ups 1000Va,Power,398.64,930.44,Low
+SKU029,LAP-029,Workstation,Computing,76.08,363.53,High
+SKU030,MON-030,4K Monitor,Displays,318.03,1047.51,Medium
+SKU031,CMP-031,2Tb Ssd,Components,464.0,964.19,High
+SKU032,NET-032,Wifi Router,Networking,1004.31,136.19,High
+SKU033,ACC-033,Webcam,Accessories,1016.2,1629.16,Low
+SKU034,SSD-034,External Ssd,Storage,967.38,1412.98,Medium
+SKU035,PWR-035,Power Adapter,Power,183.1,985.8,Medium
+SKU036,LAP-036,Workstation,Computing,1032.65,857.21,Medium
+SKU037,MON-037,Ultrawide Monitor,Displays,338.09,290.29,Medium
+SKU038,CMP-038,Cpu Module,Components,514.85,453.16,Medium
+SKU039,NET-039,Network Adapter,Networking,409.81,710.96,Medium
+SKU040,ACC-040,Wireless Mouse,Accessories,373.83,1710.25,Low
+SKU041,SSD-041,Enterprise Ssd,Storage,410.82,984.69,Low
+SKU042,PWR-042,Ups 2000Va,Power,791.79,1456.71,Medium
+SKU043,LAP-043,Workstation,Computing,363.58,1334.74,High
+SKU044,MON-044,Ultrawide Monitor,Displays,841.39,1555.56,High
+SKU045,CMP-045,Motherboard,Components,136.74,1318.63,High
+SKU046,NET-046,Wireless Mouse,Networking,1124.73,286.15,Low
+SKU047,ACC-047,Mechanical Keyboard,Accessories,722.58,1418.51,Medium
+SKU048,SSD-048,Enterprise Ssd,Storage,1136.58,489.69,Medium
+SKU049,PWR-049,Ups 1000Va,Power,748.99,345.62,Medium
+SKU050,LAP-050,Business Laptop,Computing,697.61,862.8,Medium
+SKU051,MON-051,Ultrawide Monitor,Displays,964.11,908.73,Medium
+SKU052,CMP-052,Cpu Module,Components,1119.2,255.13,High
+SKU053,NET-053,Network Adapter,Networking,797.99,779.66,Medium
+SKU054,ACC-054,Mechanical Keyboard,Accessories,813.7,630.53,Low
+SKU055,SSD-055,Enterprise Ssd,Storage,342.88,684.16,High
+SKU056,PWR-056,Surge Protector,Power,210.19,304.36,Low
+SKU057,LAP-057,Mini Pc,Computing,475.4,1325.6,Medium
+SKU058,MON-058,27-Inch Monitor,Displays,1124.96,1414.43,Medium
+SKU059,CMP-059,1Tb Ssd,Components,1184.29,1304.67,Low
+SKU060,NET-060,Enterprise Switch,Networking,164.21,1537.69,Medium
