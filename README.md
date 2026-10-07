@@ -62,7 +62,9 @@ The project follows an analyst workflow:
 
 ## Dataset
 
-The project uses inventory and shipment data containing operational fields for products, locations, dates, shipping modes, delivery performance, inventory levels, delays, freight cost, and supplier-risk information.
+This project uses a **synthetic supply-chain dataset created for analytics practice and portfolio development**. The data was structured to resemble realistic inventory and shipment operations, including products, locations, suppliers, inventory levels, shipment activity, delivery performance, logistics delays, freight cost, and supplier-risk information.
+
+The dataset was prepared and validated in Python before being used for the Power BI reporting workflow.
 
 The Power BI model separates reusable dimensions from operational fact tables.
 
@@ -84,20 +86,21 @@ The date dimension supports time-based analysis, while product and location dime
 
 ### Used directly in this project
 
+- **Python**
+- **Pandas**
+- **NumPy**
 - **Power BI**
 - **Power Query**
 - **DAX**
 - **Power BI data modeling**
 - **Power BI interactive visualizations**
 
-### Analytics skills demonstrated across the learning journey
+### Supporting analytics work
 
-- **Python**
-- **NumPy**
-- **Pandas**
-- **SQL**
+- **SQL** — analytical SQL practice and preparation of SQL-ready table exports
+- **MySQL / MySQL Connector** — connection and import workflow explored; implementation was paused because of compatibility/import issues during development
 
-Python, NumPy, Pandas, and SQL were part of the broader analytics development journey surrounding this project. The Power BI report itself was developed using Power Query, DAX, data modeling, and Power BI visualization capabilities.
+Python, Pandas, and NumPy were used directly in this project for data profiling, cleaning, validation, transformation, anomaly investigation, derived calculations, and preparation of model-ready tables. Power BI, Power Query, DAX, and the dimensional model were then used for the reporting and interactive analysis workflow.
 
 ---
 
@@ -127,6 +130,39 @@ The goal was to preserve meaningful operational records while investigating ques
 
 For example, negative `Available Qty` records were investigated as potential inventory anomalies rather than simply removed.
 
+### Python analysis workflow
+
+The accompanying Jupyter notebook documents the project analysis performed before and alongside the Power BI build. Key work included:
+
+- Loading the shipment, inventory, product, location, supplier, and date tables with Pandas
+- Inspecting shape, columns, data types, nulls, duplicates, and distributions
+- Standardizing categorical values such as `Shipping_Mode` and supplier/product categories
+- Investigating and resolving a duplicate `Shipment_ID`
+- Reviewing missing foreign keys and documenting unresolved records
+- Converting shipment date fields to datetime values
+- Validating and correcting inconsistent transit-time and delivery-date records
+- Checking numeric/business-rule validity for quantity, freight cost, delays, supplier risk, and revenue exposure
+- Standardizing product and supplier dimension values and resolving duplicate keys where evidence supported a correction
+- Creating `Available_Qty` and an inventory-risk classification for analytical investigation
+- Exporting model-ready tables for the Power BI workflow
+
+### Notebook
+
+[Python Data Cleaning & Analysis Notebook](./python/Supply_Chain_Data_Cleaning_and_Analysis.ipynb)
+
+### Data files
+
+| File | Purpose | Rows |
+| --- | --- | ---: |
+| `dim_date.csv` | Date dimension | 730 |
+| `dim_location.csv` | Location/warehouse dimension | 25 |
+| `dim_product.csv` | Product and category dimension | 60 |
+| `dim_supplier.csv` | Supplier dimension | 40 |
+| `fact_inventory.csv` | Inventory-level operational records | 1,500 |
+| `fact_shipments.csv` | Shipment-level operational records | 2,701 |
+
+These files are the cleaned/model-ready tables included with the portfolio project.
+
 ---
 
 ## Data Model
@@ -144,7 +180,7 @@ The actual Power BI model contains:
 
 ### Model view
 
-![Power BI Data Model](documentation/data-model.png)
+![Power BI Data Model](./documentation/data-model.png)
 
 ---
 
@@ -204,7 +240,7 @@ Provides a high-level control-tower view of overall inventory and shipment perfo
 
 The page gives management a quick view of shipment performance, inventory risk concentration, shipping-mode distribution, and inventory trends.
 
-![Executive Overview](screenshots/executive-overview.png)
+![Executive Overview](./screenshots/executive-overview.png)
 
 ---
 
@@ -240,7 +276,7 @@ Focuses on inventory availability, coverage, product risk, and warehouse-level c
 
 The LOC24 focus was intentional because it represented a meaningful warehouse-level inventory concentration in the analysis.
 
-![Inventory Risk](screenshots/inventory-risk.png)
+![Inventory Risk](./screenshots/inventory-risk.png)
 
 ---
 
@@ -269,15 +305,15 @@ Analyzes shipment delivery performance and the operational characteristics assoc
 
 ### Shipping-mode observations
 
-| Shipping Mode | Avg Transit Time | On-Time Delivery |
-|---|---:|---:|
-| Ocean | 30.06 days | 8.49% |
-| Rail | 21.50 days | 7.73% |
-| Air | 13.59 days | 10.55% |
+| **Shipping Mode** | **Avg Transit Time** | **On-Time Delivery** |
+| ----------------- | -------------------- | -------------------- |
+| Ocean             | 30.06 days           | 8.49%                |
+| Rail              | 21.50 days           | 7.73%                |
+| Air               | 13.59 days           | 10.55%               |
 
 These are observed differences in the available data and should not be interpreted as proof that shipping mode itself causes delivery outcomes.
 
-![Logistics & Delivery](screenshots/logistics-delivery.png)
+![Logistics & Delivery](./screenshots/logistics-delivery.png)
 
 ---
 
@@ -289,20 +325,20 @@ Provides deeper investigation into the patterns identified in the summary pages.
 
 ### Late vs On-Time Analysis
 
-| Metric | Late | On-Time |
-|---|---:|---:|
-| Avg Transit Time | 25.20 days | 18.46 days |
-| Avg Port Dwell | 4.71 days | 1.53 days |
-| Avg Customs Delay | 2.64 days | 0.84 days |
-| Avg Supplier Risk | 47.16 | 35.38 |
+| **Metric**        | **Late**   | **On-Time** |
+| ----------------- | ---------- | ----------- |
+| Avg Transit Time  | 25.20 days | 18.46 days  |
+| Avg Port Dwell    | 4.71 days  | 1.53 days   |
+| Avg Customs Delay | 2.64 days  | 0.84 days   |
+| Avg Supplier Risk | 47.16      | 35.38       |
 
 ### Priority analysis
 
-| Priority | On-Time Delivery |
-|---|---:|
-| Normal | 9.18% |
-| Priority | 8.50% |
-| Critical | 7.21% |
+| **Priority** | **On-Time Delivery** |
+| ------------ | -------------------- |
+| Normal       | 9.18%                |
+| Priority     | 8.50%                |
+| Critical     | 7.21%                |
 
 ### Inventory investigation
 
@@ -322,7 +358,7 @@ The LOC24 shipment sample contained only **2 shipments**:
 
 Because the sample is extremely small, it was deliberately not used to claim that LOC24 causes or reliably predicts late delivery.
 
-![Investigation / Insights](screenshots/investigation-insights.png)
+![Investigation / Insights](./screenshots/investigation-insights.png)
 
 ---
 
@@ -562,7 +598,18 @@ AI assistance was used as a support tool, not as a replacement for understanding
 Supply-Chain-Control-Tower/
 │
 ├── README.md
-├── LICENCE
+├── LICENSE
+│
+├── data/
+│   ├── dim_date.csv
+│   ├── dim_location.csv
+│   ├── dim_product.csv
+│   ├── dim_supplier.csv
+│   ├── fact_inventory.csv
+│   └── fact_shipments.csv
+│
+├── python/
+│   └── Supply_Chain_Data_Cleaning_and_Analysis.ipynb
 │
 ├── dashboard/
 │   └── Supply_Chain_Control_Tower.pbix
